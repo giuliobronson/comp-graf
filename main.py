@@ -22,7 +22,18 @@ if __name__ == "__main__":
     # Matriz de rotação
     rotation_matrix = get_rotation_matrix(5, 6, 2)
 
-    # Desenho do cubo
-    printer = Printer("cube.txt")
-    printer.play_rotation(cube, rotation_matrix)
+    # Cubo com rotação e projeção ortogonal
+    printer = Printer("cube_ort.txt")
+    printer.play_rotation(cube, rotation_matrix, z=0, f=0, occlusion=False)
     
+    # Cubo com rotação e projeção perspectiva
+    printer = Printer("cube_pept.txt")
+    printer.play_rotation(cube, rotation_matrix, z=2, f=1.5, occlusion=False)
+
+     # Cubo com rotação e projeção ortogonal e oclusão
+    printer = Printer("cube_ort_occ.txt")
+    printer.play_rotation(cube, rotation_matrix, z=0, f=0, occlusion=True)
+    
+    # Cubo com rotação e projeção perspectiva e oclusão
+    printer = Printer("cube_pept_occ.txt")
+    printer.play_rotation(cube, rotation_matrix, z=2, f=1.5, occlusion=True)
