@@ -1,4 +1,4 @@
-class Cube:
+class Polyhedron:
 
     def __init__(self, faces):
         self.faces = faces

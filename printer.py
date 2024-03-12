@@ -42,5 +42,3 @@ class Printer:
             self.print(object, z=z, f=f, occlusion=occlusion)
             self.clear_screen()
             object.rotate(rotation_matrix)
-
-        os.system(f".\winplot.exe {self.file_name}")
