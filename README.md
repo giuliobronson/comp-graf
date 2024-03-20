@@ -1,1 +1,1 @@
-# comp-graf
+# cube-projections
